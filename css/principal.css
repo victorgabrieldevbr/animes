@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121818;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navegação (desce junto com o site) */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #090c0c;
+    border-bottom: 2px solid #49494b;
+}
+
+nav h1 {
+    color: #fc6500;
+    font-size: 24px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 1px solid #49494b;
+    border-radius: 16px;
+}
+
+nav a:hover {
+    background-color: #fc6500;
+    color: #0c0c0b;
+    border-color: #fc6500;
+}
+
+/* Lista de animes */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.anime {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #090c0c;
+    border: 1px solid #49494b;
+    border-radius: 16px;
+}
+
+.anime:hover {
+    border-color: #fc6500;
+}
+
+.anime h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0 5px;
+    color: #ca5100;
+}
+
+.capas {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 250px;
+}
+
+.capas img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.paragrafo {
+    flex: 2 1 350px;
+}
+
+.paragrafo p {
+    padding: 10px 20px;
+}
+
+.paragrafo span {
+    color: #fc6500;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.nota {
+    display: inline-block;
+    padding: 4px 14px;
+    background-color: #fc6500;
+    color: #0c0c0b;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #999c9c;
+    font-size: 15px;
+    border-top: 2px solid #49494b;
+}
